@@ -24,6 +24,9 @@ logger = app.logger
 
 routes = [
 	('/', 'index', handlers.pages.front_page, ['GET']),
+	('/home', 'home', handlers.pages.home_page, ['GET']),
+	('/forms/log', 'log_form', handlers.forms.log, ['POST']),
+	('/forms/login', 'login_form', handlers.forms.login, ['POST']),
 ]
 
 for path, endpoint, handler, methods in routes:
