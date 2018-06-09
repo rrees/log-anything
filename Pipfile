@@ -9,6 +9,7 @@ redis = "*"
 Flask = "*"
 Flask-SSLify = "*"
 dataset = "*"
+wtforms = "*"
 
 [dev-packages]
 
