@@ -1,5 +1,7 @@
 {% extends 'default.html' %}
 
+{% block title %}Front page{% endblock %}
+
 {% block navbar %}
 {% endblock %}
 
@@ -7,8 +9,8 @@
 <div class="container-fluid">
     <form method="POST" action="{{url_for('login_form')}}">
     	<div class="form-group">
-    		<label for="username">Username</label>
-    		<input id="username" name="username" class="form-control" required type="text">
+    		<label for="email">Email</label>
+    		<input id="email" name="email" class="form-control" required type="text">
     	</div>
     	<div class="form-group">
     		<label for="password">Password</label>

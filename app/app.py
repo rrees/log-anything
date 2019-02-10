@@ -27,6 +27,7 @@ logger = app.logger
 routes = [
 	('/', 'index', handlers.pages.front_page, ['GET']),
 	('/home', 'home', handlers.pages.home_page, ['GET']),
+	('/forms/submission/log', 'log_form', handlers.forms.log, ['POST']),
 ]
 
 routes = routes + auth_routes
