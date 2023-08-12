@@ -1,9 +1,10 @@
 import wtforms
 
 from wtforms import validators
-from wtforms.fields import DateField, StringField, PasswordField
+from wtforms.fields import DateField, StringField, PasswordField, IntegerField
 
 
 class LogForm(wtforms.form.Form):
-	log_text = StringField('Log', [validators.required()])
-	log_date = DateField('Date', [validators.required()])
+    log_text = StringField("Log", [validators.InputRequired()])
+    quantity = IntegerField("Quantity", [validators.Optional()])
+    date = DateField("Date", [validators.InputRequired()])
